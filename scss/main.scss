@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/bma7mnk.css");
+
+
+//importing utils
+@import "./mixins/";
+@import "./variables/";
+@import "./media/";
+
+
+//importing components
+@import "./components/hero";
+
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0px;
+    margin: 0px;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+body {
+    font-family: noto-sans-arabic, sans-serif;
+    font-style: normal;
+    color: $body-text-color;
+}
+
+.center {
+    @include center;
+}
+
+.container {
+    width: 80%;
+
+    @include phone-only {
+        width: 95%;
+    }
+}

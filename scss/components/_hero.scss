@@ -1,0 +1,29 @@
+.hero {
+    background: linear-gradient(90deg, #180036 0%, rgba(24, 0, 54, 0.5) 100%);
+
+    .hero-container {
+        @include space-between;
+        @include padding-55;
+
+        .image-box {
+            width: 58%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content-box {
+            border: 1px solid white;
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            gap: 48px;
+
+            .content {
+                color: $white;
+            }
+        }
+    }
+}
