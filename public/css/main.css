@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+Arabic:100,200,300,regular,500,600,700,800,900);
 .hero {
-  background: linear-gradient(90deg, #180036 0%, rgba(24, 0, 54, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 61.98%, #FFFFFF 100%), url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero .hero-container {
   display: flex;
