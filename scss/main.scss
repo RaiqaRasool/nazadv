@@ -32,6 +32,8 @@
 }
 
 html {
+    scroll-behavior: smooth;
+
     @include tablet-and-smaller {
         font-size: 14px;
     }
