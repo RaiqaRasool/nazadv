@@ -1,5 +1,4 @@
-@import url("https://use.typekit.net/bma7mnk.css");
-
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Arabic:100,200,300,regular,500,600,700,800,900);
 
 //importing utils
 @import "./mixins/";
@@ -9,7 +8,13 @@
 
 //importing components
 @import "./components/hero";
-
+@import "./components/section2";
+@import "./components/section3";
+@import "./components/section4";
+@import "./components/section5";
+@import "./components/section6";
+@import "./components/section7";
+@import "./components/footer";
 
 * {
     box-sizing: border-box;
@@ -26,10 +31,21 @@
     }
 }
 
+html {
+    @include tablet-and-smaller {
+        font-size: 14px;
+    }
+
+    @include phone-only {
+        font-size: 11px;
+    }
+}
+
 body {
-    font-family: noto-sans-arabic, sans-serif;
-    font-style: normal;
+    font-family: 'Noto Sans Arabic', sans-serif;
     color: $body-text-color;
+    font-weight: 400;
+
 }
 
 .center {
@@ -39,7 +55,16 @@ body {
 .container {
     width: 80%;
 
-    @include phone-only {
+    @include tablet-and-smaller {
         width: 95%;
     }
+}
+
+.container-fluid {
+    width: 95%;
+
+    @include width-1300 {
+        width: 90%;
+    }
+
 }

@@ -1,0 +1,48 @@
+.section4 {
+    background: #F1F5F9;
+
+    .section4-container {
+        @include padding-55;
+        @include space-between;
+        display: flex;
+        column-gap: 32px;
+
+        @include width-1300 {
+            flex-direction: column-reverse;
+
+        }
+
+        .content-box {
+            color: $purple;
+            width: 49%;
+
+            @include width-1300 {
+                width: 100%;
+            }
+
+            .heading {
+                font-weight: $weight-700;
+                font-size: $font-64;
+            }
+
+            .subheading {
+                font-size: $font-24;
+            }
+        }
+
+        .image-box {
+            width: 49%;
+            @include center;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            @include width-1300 {
+                width: 100%;
+            }
+        }
+
+    }
+}

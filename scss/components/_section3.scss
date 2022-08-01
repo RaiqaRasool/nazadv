@@ -1,0 +1,65 @@
+.section3 {
+    flex-direction: column;
+    @include padding-89;
+
+    .section3-container {
+
+
+        .upper-part {
+            text-align: center;
+
+            .heading {
+                font-weight: $weight-700;
+                font-size: 24px;
+                color: $purple;
+            }
+
+            .subheading {
+                font-size: 14px;
+                font-weight: $weight-500;
+                color: $blue;
+            }
+        }
+
+        .box-container {
+            margin-top: 48px;
+            @include space-between;
+            flex-wrap: wrap;
+            row-gap: 48px;
+            align-items: stretch;
+
+            .box {
+                width: 32%;
+                background: #F1F5F9;
+                border: 1px solid #F2F2F7;
+                border-radius: 16px;
+                padding: 32px;
+
+
+                @include tablet-and-smaller {
+                    width: 49%;
+                }
+
+                @include phone-only {
+                    width: 100%;
+                }
+
+                .title {
+                    @include flex-align;
+                    gap: 28px;
+
+                    .text {
+                        font-size: $font-18;
+                        font-weight: 700;
+                    }
+                }
+
+                .body {
+                    opacity: 0.7;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}

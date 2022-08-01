@@ -2,7 +2,13 @@
     @media (max-width:468px) {
         @content;
     }
+}
 
+
+@mixin width-1300 {
+    @media (max-width:1250px) {
+        @content;
+    }
 }
 
 @mixin tablet-and-smaller {

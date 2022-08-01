@@ -21,3 +21,115 @@
 @mixin padding-55 {
     padding: 55px 0px;
 }
+
+@mixin padding-32 {
+    padding: 32px 0px;
+}
+
+@mixin padding-89 {
+    padding: 89px 0px;
+}
+
+
+@mixin form {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 9.19681px;
+    color: $white;
+
+    .field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        .lbl {
+            display: flex;
+            gap: 3px;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        .radio-lbl {
+            @include flex-align;
+            gap: 13px;
+
+            .radio {
+                display: inline-flex;
+                padding: 13.79px;
+                border: none;
+                display: none;
+
+                &:checked {
+                    background-color: $purple;
+                }
+            }
+
+            .radio__radio {
+                position: relative;
+                width: 13.79px;
+                height: 13.79px;
+                background: #FFFFFF;
+                border: 0.530353px solid $purple;
+                border-radius: 50%;
+            }
+
+            .radio__radio::after {
+                content: "";
+                position: absolute;
+                width: 8.67px;
+                height: 8.67px;
+                left: 2px;
+                top: 2.3px;
+                border-radius: 50%;
+                background-color: $purple;
+                transform: scale(0);
+            }
+
+            .radio:checked+.radio__radio::after {
+                transform: scale(1);
+            }
+
+        }
+
+
+        .input {
+            outline: none;
+            padding: 14.7149px;
+            border-radius: 4.5984px;
+            border: none;
+        }
+    }
+
+    #email {
+        margin-top: 25px;
+    }
+
+    .submit-btn {
+        cursor: pointer;
+        width: 100%;
+        font-size: $font-18;
+        font-weight: $weight-600;
+        padding: 14.85px 36.7031px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #53C9EE;
+        background-blend-mode: overlay, normal;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 11.5076px;
+    }
+
+}
+
+@mixin gradient-background {
+    background: url("../img/gradient-bg.png") #343466;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: overlay, normal;
+    mix-blend-mode: multiply;
+}

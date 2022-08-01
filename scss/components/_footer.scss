@@ -1,0 +1,11 @@
+.footer {
+    @include gradient-background;
+    margin-top: 70px;
+
+    .footer-container {
+        @include center;
+        padding: 48px 0px;
+        color: $white;
+        flex-direction: column;
+    }
+}

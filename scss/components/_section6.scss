@@ -1,0 +1,77 @@
+.section6 {
+    @include padding-89;
+
+    .section6-container {
+        @include center;
+        gap: 62px;
+
+        .top-part {
+            .top-heading {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                width: 100%;
+
+                .text {
+                    font-weight: $weight-700;
+                    font-size: $font-24;
+                }
+            }
+        }
+
+        .bottom-part {
+            text-align: center;
+            @include center;
+            gap: 8px;
+            flex-direction: column;
+
+            .tag {
+                width: fit-content;
+                font-weight: $weight-700;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #343466;
+            }
+
+            .title {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+
+                .text {
+                    font-weight: $weight-700;
+                    font-size: $font-40;
+
+                    span {
+                        color: $blue;
+                        position: relative;
+                        width: fit-content;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-image: url(../img/section-6.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            top: 5rem;
+                            width: 100%;
+                            object-fit: contain;
+                            height: 5.14px;
+                            left: 0px;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .icon {
+                    margin-top: -30px;
+                    width: 55.68px;
+                    height: 72.17px;
+                    background: url(../img/section-6.png);
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                }
+            }
+        }
+    }
+}

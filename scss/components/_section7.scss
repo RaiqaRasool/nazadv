@@ -1,0 +1,37 @@
+.section7 {
+    .section7-container {
+        padding: 2.5rem;
+        @include space-between;
+        @include gradient-background;
+        row-gap: 96px;
+
+        @include width-1300 {
+            flex-direction: column;
+        }
+
+        .form-part {
+            width: 54%;
+
+            @include width-1300 {
+                width: 100%;
+            }
+
+            .form {
+                @include form;
+            }
+        }
+
+        .image-part {
+            width: 44%;
+
+            @include width-1300 {
+                width: 80%;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

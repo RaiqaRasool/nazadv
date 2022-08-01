@@ -1,0 +1,23 @@
+.section5 {
+    padding: 90px 0px;
+
+    .section5-container {
+        @include flex-align;
+        gap: 54px;
+        flex-direction: column;
+
+        .heading {
+            font-size: $font-32;
+            font-weight: $weight-700;
+            text-align: center;
+        }
+
+        .logo-container {
+            flex-wrap: wrap;
+            @include center;
+            column-gap: 53px;
+            row-gap: 16px;
+
+        }
+    }
+}

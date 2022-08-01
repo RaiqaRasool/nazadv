@@ -1,12 +1,22 @@
 .hero {
     background: linear-gradient(90deg, #180036 0%, rgba(24, 0, 54, 0.5) 100%);
 
+
     .hero-container {
         @include space-between;
         @include padding-55;
 
+        @include width-1300 {
+            flex-direction: column;
+
+        }
+
         .image-box {
-            width: 58%;
+            width: 54%;
+
+            @include width-1300 {
+                width: 100%;
+            }
 
             img {
                 width: 100%;
@@ -14,8 +24,12 @@
         }
 
         .content-box {
-            border: 1px solid white;
-            width: 38%;
+            width: 44%;
+
+            @include width-1300 {
+                width: 100%;
+            }
+
             display: flex;
             flex-direction: column;
             text-align: right;
@@ -23,6 +37,45 @@
 
             .content {
                 color: $white;
+
+                .heading {
+                    font-size: $font-64;
+                    font-weight: $weight-700;
+                }
+
+                .subheading {
+                    font-size: $font-24;
+
+                }
+            }
+
+            .button {
+                display: flex;
+                align-items: flex-end;
+                cursor: pointer;
+
+                @include width-1300 {
+                    margin-bottom: 28px;
+                }
+
+                .actual-btn {
+                    padding: 10.3894px 25.6782px;
+                    display: flex;
+                    gap: 16.79px;
+                    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #53C9EE;
+                    background-blend-mode: overlay, normal;
+                    box-shadow: 0px 11.1939px 27.9848px rgba(0, 0, 0, 0.1);
+                    border-radius: 8.05098px;
+                    font-size: 13px;
+                    font-weight: 600;
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+
+                }
             }
         }
     }
