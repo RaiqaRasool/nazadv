@@ -271,6 +271,7 @@
   width: 100%;
   font-size: 1.125rem;
   font-weight: 600;
+  font-family: "Noto Sans Arabic", sans-serif;
   padding: 14.85px 36.7031px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #53C9EE;
   background-blend-mode: overlay, normal;
@@ -608,6 +609,7 @@
   width: 100%;
   font-size: 1.125rem;
   font-weight: 600;
+  font-family: "Noto Sans Arabic", sans-serif;
   padding: 14.85px 36.7031px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #53C9EE;
   background-blend-mode: overlay, normal;
