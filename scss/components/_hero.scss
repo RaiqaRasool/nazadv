@@ -42,6 +42,10 @@
                 .heading {
                     font-size: $font-64;
                     font-weight: $weight-700;
+
+                    @include phone-only {
+                        font-size: 48px;
+                    }
                 }
 
                 .subheading {
