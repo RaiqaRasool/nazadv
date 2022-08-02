@@ -148,8 +148,7 @@
   background: #53C9EE;
   border-radius: 16px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   color: white;
 }
