@@ -23,9 +23,11 @@
             .heading {
                 font-weight: $weight-700;
                 font-size: $font-64;
+                margin-bottom: 32px;
             }
 
             .subheading {
+                margin: 32px 0px;
                 font-size: $font-24;
             }
         }

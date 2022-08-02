@@ -3,12 +3,15 @@
 
     .section6-container {
         @include center;
+        flex-direction: column;
         gap: 62px;
 
         .top-part {
+
             .top-heading {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 gap: 16px;
                 width: 100%;
 
@@ -22,10 +25,10 @@
         .bottom-part {
             text-align: center;
             @include center;
-            gap: 8px;
             flex-direction: column;
 
             .tag {
+                margin-bottom: 32px;
                 width: fit-content;
                 font-weight: $weight-700;
                 font-size: 12px;
@@ -38,6 +41,7 @@
                 display: flex;
                 gap: 5px;
                 align-items: center;
+                margin-bottom: 21px;
 
                 .text {
                     font-weight: $weight-700;
@@ -54,10 +58,10 @@
                             background-image: url(../img/section-6.svg);
                             background-size: contain;
                             background-repeat: no-repeat;
-                            top: 5rem;
+                            top: 80%;
                             width: 100%;
                             object-fit: contain;
-                            height: 5.14px;
+                            height: 10px;
                             left: 0px;
                             position: absolute;
                         }

@@ -46,27 +46,14 @@
                     }
                 }
 
-                .design-box {
-                    display: flex;
-                    align-items: flex-end;
-
-                    @include width-1300 {
-                        display: none;
-                    }
-
-                    .box {
-                        width: 100px;
-                        height: 100px;
-                        background: #D9D9D9;
-                    }
-                }
-
                 .subtext {
                     font-size: $font-18;
                 }
             }
 
             .image-part {
+                margin-top: 21px;
+
                 .box-container {
                     display: flex;
                     gap: 16px;
@@ -76,6 +63,7 @@
 
                         @include phone-only {
                             padding: 6px;
+                            border-radius: 6px;
 
                         }
 
@@ -84,7 +72,7 @@
                         @include center;
                         flex-direction: column;
                         color: $white;
-                        flex-grow: 1;
+                        // flex-grow: 1;
 
                         .top-text {
                             font-size: $font-18;
@@ -122,7 +110,7 @@
             }
 
             @include tablet-and-smaller {
-                width: 95%;
+                width: 100%;
             }
 
             .form {
