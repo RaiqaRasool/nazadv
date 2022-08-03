@@ -9,14 +9,14 @@
             flex-direction: column;
         }
 
-        .form-part {
+        .form-part-lower {
             width: 54%;
 
             @include width-1300 {
                 width: 100%;
             }
 
-            .form {
+            .form-lower {
                 @include form;
             }
         }
